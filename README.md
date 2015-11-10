@@ -1,6 +1,11 @@
 ## Testowanie aplikacji w Ruby, matwb@ug.edu.pl
 
-Podręczne linki:
+1. [ ] [Learn X in Y minutes, where X = Ruby Array/Hash/Enumerable](ruby.md)
+2. [ ] [Coś do przetestowania na początek](/)
+3. [ ] [Doubles, mocks, stubs](/)
+4. [ ] [Program/Biblioteka/Aplikacja WWW](/)
+
+## Podręczne linki
 
 1. [Dokumentacja RSpec](http://rspec.info/):
   - [rspec-core](https://github.com/rspec/rspec-core)
@@ -11,9 +16,3 @@ Podręczne linki:
   - [Array](http://ruby-doc.org/core-2.2.3/Array.html)
   - [Enumerable](http://ruby-doc.org/core-2.2.3/Enumerable.html)
 1. [Better Specs](http://betterspecs.org/).
-
-## Zadania
-
-1. [ ] [Learn X in Y minutes, where X = Ruby Array/Hash/Enumerable](ruby.md)
-2. [ ] [Coś do przetestowania na początek](/)
-3. [ ] [Program/Biblioteka/Aplikacja WWW](/)
