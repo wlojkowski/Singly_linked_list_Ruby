@@ -1,3 +1,1 @@
-## Ruby, v2.2.3
-
-TODO
+## Notatki z Ruby, v2.3.1
