@@ -1,9 +1,10 @@
-## Testowanie aplikacji w Ruby, [wpisać mail kontaktowy]
+## Testowanie aplikacji w Ruby, [wpisać swój mail kontaktowy]
 
 1. [ ] [Notatki z Ruby](ruby.md)
 2. [ ] [Notatki z RSpec](rspec.md)
 3. [ ] [Zadanie 1 (zaliczenie)](/) – deadline 13.11.2016
 4. [ ] [Zadanie 2 (egzamin)](/) – deadline 08.01.2017
+
 
 ## Podręczne linki
 
