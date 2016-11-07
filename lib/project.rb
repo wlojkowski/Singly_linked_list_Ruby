@@ -103,20 +103,80 @@ class LinkedList
     cur.next = nil
     temp.value
   end
-end
 
-node1 = Node.new(3)
-node2 = Node.new(60)
-lista2 = LinkedList.new
-lista2.add(node1)
-lista2.add(7)
-lista2.push_front(50)
-lista2.add(43)
-lista2.add(node2)
-puts "Pop_front test: #{lista2.pop_front}"
-puts "Value at 0: #{lista2.value_at(0)}"
-puts "Pop_back test: #{lista2.pop_back}"
-puts "Value at 2: #{lista2.value_at(2)}"
-puts "Length of list: #{lista2.size}"
-puts "Is list empty: #{lista2.empty}"
-puts "Is 0 in list?: #{lista2.in_list?(0)}"
+  def front
+    if @head.nil?
+      nil
+    else
+      @head.value
+    end
+  end
+
+  def back
+    cur = head
+    cur = cur.next until cur.next.nil?
+    cur.value
+  end
+
+  def getnode_at(index)
+    cur = head
+    return nil if size <= index
+    loop do
+      break if index <= 0
+      index -= 1
+      cur = cur.next
+    end
+    cur
+  end
+
+  def insert_at(value, index)
+    value = Node.new(value) if value.class != Node
+    cur = getnode_at(index - 1)
+    return if cur.nil?
+    temp = cur.next
+    cur.next = value
+    cur.next.next = temp
+  end
+
+  def erase(index)
+    cur = getnode_at(index - 1)
+    return if cur.nil?
+    cur.next = cur.next.next
+  end
+
+  def value_n_from_end(n)
+    index = size + 1 - n
+    getnode_at(index).value
+  end
+
+  def reverse_list
+    cur = head
+    prev = nil
+    loop do
+      break if cur.nil?
+      nxt = cur.next
+      cur.next = prev
+      prev = cur
+      cur = nxt
+    end
+    @head = prev
+  end
+
+  def getnode_byvalue(v)
+    prev = nil
+    cur = head
+    loop do
+      break if v == cur.value || cur.next.nil?
+      prev = cur
+      cur = cur.next
+    end
+    prev
+  end
+
+  def remove_value(value)
+    prev = getnode_byvalue(value)
+    cur = prev.next
+    return unless cur.value == value
+    !prev.nil? ? (prev.next = cur.next) : (@head = cur.next)
+  end
+end
