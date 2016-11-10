@@ -6,14 +6,14 @@ class Node
     @value = v
     @next = nil
   end
-
-  def print_value
-    puts " Wartosc : #{value}"
-  end
 end
 # LinkedList
 class LinkedList
   attr_accessor :head
+
+  def initialize(v = nil)
+    add(v)
+  end
 
   def add(n)
     n = Node.new(n) if n.class != Node
@@ -28,15 +28,6 @@ class LinkedList
     cur = head
     cur = cur.next until cur.next.nil?
     cur
-  end
-
-  def print_all
-    cur = head
-    loop do
-      puts "Wartosc: #{cur.value}"
-      break if cur.next.nil?
-      cur = cur.next
-    end
   end
 
   def size
@@ -60,17 +51,6 @@ class LinkedList
       cur = cur.next
     end
     false
-  end
-
-  def value_at(n)
-    cur = head
-    return nil if size <= n
-    loop do
-      break if n <= 0
-      n -= 1
-      cur = cur.next
-    end
-    cur.value
   end
 
   def empty
@@ -108,14 +88,8 @@ class LinkedList
     if @head.nil?
       nil
     else
-      @head.value
+      @head
     end
-  end
-
-  def back
-    cur = head
-    cur = cur.next until cur.next.nil?
-    cur.value
   end
 
   def getnode_at(index)
@@ -145,7 +119,7 @@ class LinkedList
   end
 
   def value_n_from_end(n)
-    index = size + 1 - n
+    index = size - n
     getnode_at(index).value
   end
 

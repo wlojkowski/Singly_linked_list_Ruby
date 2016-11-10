@@ -1,1 +1,2 @@
-## Notatki z RSpec, v3.5.0
+--color
+--format documentation
