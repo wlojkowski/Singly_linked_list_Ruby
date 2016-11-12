@@ -127,8 +127,12 @@ RSpec.describe 'project.rb' do
     it 'front should be defined' do
       expect { @list.front }.not_to raise_error
     end
-    it 'should return first element' do
+    it 'return first element' do
       expect(@list.front.value).to eq(3)
+    end
+    it 'return correct element after deleting first node' do
+      @list.pop_front
+      expect(@list.front.value).to eq(4)
     end
   end
   describe '#getlast' do
@@ -137,6 +141,10 @@ RSpec.describe 'project.rb' do
     end
     it 'should return last element' do
       expect(@list.getlast.value).to eq(6)
+    end
+    it 'return correct value after deleting last element' do
+      @list.pop_back
+      expect(@list.getlast.value).to eq(15)
     end
   end
   describe '#value_n_from_end' do
