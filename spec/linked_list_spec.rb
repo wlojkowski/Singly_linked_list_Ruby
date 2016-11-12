@@ -27,7 +27,6 @@ RSpec.describe 'project.rb' do
       list = LinkedList.new(5)
       expect(list.in_list?(5)).to be true
     end
-
     it 'returns proper size' do
       list = LinkedList.new(5)
       expect(list.size).to eq(1)
@@ -36,10 +35,10 @@ RSpec.describe 'project.rb' do
 
   describe '#add' do
     let(:list) { LinkedList.new(5) }
-    it 'add should be defined' do
+    it 'should be defined' do
       expect { list.add(4) }.not_to raise_error
     end
-    it 'should contain corect value' do
+    it 'should add corect node from value' do
       list.add(4)
       expect(list.in_list?(4)).to be true
     end
