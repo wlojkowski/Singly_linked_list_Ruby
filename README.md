@@ -1,20 +1,10 @@
-## Testowanie aplikacji w Ruby, [wpisać swój mail kontaktowy]
+## Testowanie aplikacji w Ruby, [wlojkowski@sigma.ug.edu.pl]
+
+Projekt 1 -Implementacja listy jednokierunkowej w Ruby.
 
 1. [ ] [Notatki z Ruby](ruby.md)
 2. [ ] [Notatki z RSpec](rspec.md)
 3. [ ] [Zadanie 1 (zaliczenie)](/) – deadline 13.11.2016
-  - przykładowe projekty na zaliczenie –
-  [03-rspec](https://github.com/egzamin/tar/tree/master/labs/03-rspec),
-  [04-write-test](https://github.com/egzamin/tar/tree/master/labs/04-write_tests)
-4. [ ] [Zadanie 2 (egzamin)](/) – deadline 08.01.2017
-  - przykładowe projekty na egzamin –
-  [06-integration_tests](https://github.com/egzamin/tar/tree/master/labs/06-integration_tests),
-  [07-mocks](https://github.com/egzamin/tar/tree/master/labs/07-mocks)
-
-**Rozgrzewka przed zaliczeniem i egzaminem:**
-W projektach _03-rspec_, _04-write-test_, _06-integration_tests_ i _07-mocks_
-uzupełnić brakujący kod, brakujące testy; dodać nieco swojego kodu i kilka testów.
-
 
 ## Podręczne linki
 
